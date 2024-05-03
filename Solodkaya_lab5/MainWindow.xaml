@@ -1,0 +1,26 @@
+﻿<Window x:Class="Solodkaya_lab5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Solodkaya_lab5"
+        mc:Ignorable="d"
+        Title="Palindrome Check" Height="250" Width="350">
+    <Grid>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <Label Content="Введите первое число:"/>
+            <TextBox x:Name="Number1TextBox"/>
+
+            <Label Content="Введите второе число:"/>
+            <TextBox x:Name="Number2TextBox"/>
+
+            <Button Content="Проверить" Click="CheckPalindrome_Click"/>
+
+            <TextBlock x:Name="ResultText" TextWrapping="Wrap" Margin="5"/>
+
+        </StackPanel>
+
+    </Grid>
+</Window>
